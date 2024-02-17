@@ -1,0 +1,30 @@
+version = 1
+
+[[analyzers]]
+name = "test-coverage"
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "react",
+    "angularjs"
+  ]
+  environment = [
+    "cypress",
+    "nodejs",
+    "jquery"
+  ]
+
+[[analyzers]]
+name = "terraform"
+
+[[analyzers]]
+name = "sql"
+
+[[analyzers]]
+name = "python"
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
